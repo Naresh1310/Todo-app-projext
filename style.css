@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
+}
+
+.background-img {
+  width: 100%;
+}
+.page-name {
+  font-size: 4rem;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.page-name p {
+  letter-spacing: 0.5rem;
+}
+form {
+  width: 100%;
+}
+.input-todo {
+  padding: 1rem;
+  width: 90%;
+  background-color: hsl(237, 14%, 26%);
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  outline: none;
+}
+.input-todo::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.light-theme::placeholder {
+  color: #000;
+}
+.light-theme.input-todo {
+  color: #000;
+}
+
+.todo-list {
+  overflow-y: scroll;
+  height: 30rem;
+  background-color: hsl(237, 14%, 26%);
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.todo {
+  max-width: 60rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60rem;
+  transform: translate(-50%, 10%);
+}
+.todo-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: hsl(237, 14%, 26%);
+  height: 6rem;
+  border-radius: 1rem;
+}
+
+.delete-todo {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 2rem;
+  margin-left: auto;
+  border-radius: 50%;
+  border: none;
+  background: none;
+}
+.todo-delete-icon {
+  width: 100%;
+}
+.todo-delete-icon-important {
+  cursor: pointer;
+}
+.selection-todo {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.selection-todo img {
+  width: 1rem;
+  height: 1rem;
+}
+.selection-todo:hover {
+  cursor: pointer;
+  background-color: burlywood;
+}
+.todo-text {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.toggle-color-light {
+  color: #000;
+}
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+.border-bottom {
+  border-bottom: 1px solid white;
+}
+
+.todo-bottom {
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.todo-navigation {
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+.todo-navigation button,
+.clear-todos {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.todoStrike {
+  text-decoration: line-through 3px #000;
+}
+.light-theme .todoStrike {
+  text-decoration: line-through 2px #333;
+}
+.hidden {
+  display: none;
+}
+
+.light-theme {
+  background-color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
+  body {
+    background-color: hsl(235, 21%, 11%);
+  }
+  .background-img {
+    height: 30rem;
+  }
+  .todo-list {
+    height: 60vh;
+  }
+  .todo {
+    transform: translate(-50%, 8%);
+    width: 90vw;
+    height: 50vh;
+  }
+  .page-name {
+    margin-bottom: 4rem;
+  }
+  .todo-holder {
+    height: 10rem;
+  }
+  .todo-header {
+    height: 8rem;
+    /* background-color: hsl(237, 14%, 26%); */
+  }
+  .todo-text {
+    font-size: 2.6rem;
+  }
+  .input-todo {
+    font-size: 2.4rem;
+  }
+  .input-todo::placeholder {
+    font-size: 2rem;
+    /* padding: 2rem 0; */
+  }
+  .desktop-todo {
+    display: none !important;
+  }
+
+  .todo-navigation {
+    height: 5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    background-color: hsl(237, 14%, 26%);
+    height: 7rem;
+  }
+
+  .btn-holder {
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+  }
+
+  .todo-navigation button {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .mobile-nav {
+    margin-top: 1.5rem;
+  }
+  .todo-count,
+  .clear-todos {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .selection-todo {
+    width: 5rem;
+    height: 5rem;
+    padding: 2.5rem;
+  }
+  .selection-todo img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .mobile-nav-light-color {
+    background-color: #fff;
+  }
+  .mobile-nav-light-color button {
+    color: #000;
+  }
+  .toggle-color {
+    color: #000;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <img class="background-img" src="./images/bg-desktop-dark.jpg" />
+
+
+    <section class="todo">
+        <div class="page-name">
+            <p>TODO</p>
+
+            <div>
+                <img class="toggle-modes" src="./images/icon-sun.svg" />
+            </div>
+        </div>
+        <div class="todo-header margin-bottom">
+            <div class="selection-todo"></div>
+            <form>
+                <input type="text" placeholder="Create new todo" class="input-todo" />
+            </form>
+
+
+        </div>
+
+        <!-- TODOS LIST -->
+        <div class="todo-list">
+            <!-- <div class="todo-header border-bottom">
+                <div class="selection-todo">
+                    <img src="./images/icon-check.svg" alt="check image" />
+                </div>
+                <p class="todo-text">Create a new Todo</p>
+            </div> -->
+
+            <div class="todo-holder todo-header border-bottom">
+                <div class="selection-todo">
+                    <img src="./images/icon-check.svg" alt="check image" />
+                </div>
+                <p class="todo-text">Create a new Todo</p>
+                <button class="delete-todo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="todo-delete-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path class="todo-delete-icon-important" stroke-linecap="round" stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="todo-bottom todo-header ">
+            <div class="todo-count">5 item left</div>
+            <div class="todo-navigation desktop-todo">
+                <button class="all">All</button>
+                <button class="active">Active</button>
+                <button class="completed">Completed</button>
+            </div>
+            <button class="clear-todos">Clear complete</button>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="todo-navigation mobile-nav hidden">
+            <div class="btn-holder">
+                <button class="all mobile-all">All</button>
+                <button class="active mobile-active">Active</button>
+                <button class="completed mobile-complete">Completed</button>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
